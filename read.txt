@@ -1,0 +1,39 @@
+Summary – Release highlights
+New syntax features:
+
+PEP 492, coroutines with async and await syntax.
+PEP 465, a new matrix multiplication operator: a @ b.
+PEP 448, additional unpacking generalizations.
+New library modules:
+
+typing: PEP 484 – Type Hints.
+zipapp: PEP 441 Improving Python ZIP Application Support.
+New built-in features:
+
+bytes % args, bytearray % args: PEP 461 – Adding % formatting to bytes and bytearray.
+New bytes.hex(), bytearray.hex() and memoryview.hex() methods. (Contributed by Arnon Yaari in issue 9951.)
+memoryview now supports tuple indexing (including multi-dimensional). (Contributed by Antoine Pitrou in issue 23632.)
+Generators have a new gi_yieldfrom attribute, which returns the object being iterated by yield from expressions. (Contributed by Benno Leslie and Yury Selivanov in issue 24450.)
+A new RecursionError exception is now raised when maximum recursion depth is reached. (Contributed by Georg Brandl in issue 19235.)
+CPython implementation improvements:
+
+When the LC_TYPE locale is the POSIX locale (C locale), sys.stdin and sys.stdout now use the surrogateescape error handler, instead of the strict error handler. (Contributed by Victor Stinner in issue 19977.)
+.pyo files are no longer used and have been replaced by a more flexible scheme that includes the optimization level explicitly in .pyc name. (See PEP 488 overview.)
+Builtin and extension modules are now initialized in a multi-phase process, which is similar to how Python modules are loaded. (See PEP 489 overview.)
+Significant improvements in the standard library:
+
+collections.OrderedDict is now implemented in C, which makes it 4 to 100 times faster.
+The ssl module gained support for Memory BIO, which decouples SSL protocol handling from network IO.
+The new os.scandir() function provides a better and significantly faster way of directory traversal.
+functools.lru_cache() has been mostly reimplemented in C, yielding much better performance.
+The new subprocess.run() function provides a streamlined way to run subprocesses.
+The traceback module has been significantly enhanced for improved performance and developer convenience.
+Security improvements:
+
+SSLv3 is now disabled throughout the standard library. It can still be enabled by instantiating a ssl.SSLContext manually. (See issue 22638 for more details; this change was backported to CPython 3.4 and 2.7.)
+HTTP cookie parsing is now stricter, in order to protect against potential injection attacks. (Contributed by Antoine Pitrou in issue 22796.)
+Windows improvements:
+
+A new installer for Windows has replaced the old MSI. See Using Python on Windows for more information.
+Windows builds now use Microsoft Visual C++ 14.0, and extension modules should use the same.
+Please read on for a comprehensive list of user-facing changes, including many other smaller improvements, CPython optimizations, deprecations, and potential porting issues.
