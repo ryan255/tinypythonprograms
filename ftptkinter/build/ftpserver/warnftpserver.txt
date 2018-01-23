@@ -1,0 +1,31 @@
+missing module named 'multiprocessing.forking' - imported by c:\users\ryan\appdata\local\programs\python\python35\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_multiprocessing.py
+missing module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes
+missing module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection
+missing module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named resource - imported by posix, D:\maven\ftpserver.py
+missing module named posix - imported by os, D:\maven\ftpserver.py
+missing module named _posixsubprocess - imported by subprocess, multiprocessing.util, D:\maven\ftpserver.py
+missing module named 'org.python' - imported by pickle, D:\maven\ftpserver.py, xml.sax
+missing module named readline - imported by cmd, code, pdb, D:\maven\ftpserver.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, D:\maven\ftpserver.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, D:\maven\ftpserver.py
+missing module named _winreg - imported by platform, pyftpdlib.authorizers, D:\maven\ftpserver.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, D:\maven\ftpserver.py
+missing module named 'java.lang' - imported by platform, D:\maven\ftpserver.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, D:\maven\ftpserver.py
+missing module named termios - imported by tty, D:\maven\ftpserver.py, getpass
+missing module named grp - imported by tarfile, shutil, pyftpdlib.handlers, pyftpdlib.filesystems, D:\maven\ftpserver.py
+missing module named org - imported by copy, D:\maven\ftpserver.py
+missing module named pwd - imported by posixpath, tarfile, shutil, http.server, webbrowser, pyftpdlib.authorizers, pyftpdlib.handlers, pyftpdlib.filesystems, D:\maven\ftpserver.py, netrc, getpass
+missing module named ce - imported by os, D:\maven\ftpserver.py
+missing module named _dummy_threading - imported by dummy_threading, D:\maven\ftpserver.py
+missing module named _curses - imported by curses, curses.has_key
+missing module named sendfile - imported by pyftpdlib.handlers
+missing module named scandir - imported by pyftpdlib.filesystems
+missing module named OpenSSL - imported by pyftpdlib.handlers
+missing module named spwd - imported by pyftpdlib.authorizers
+missing module named _crypt - imported by crypt
